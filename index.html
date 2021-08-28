@@ -35,7 +35,13 @@
             border-color: black;  
         }
         .searchbar:hover{
-            width: 500px;
+            border-color: blue;
+        }
+
+        #search-icon{
+            position: relative;
+            left: 30px;
+            top: 3px;
         }
     </style>
     <!--link to Google icon stylesheet-->
@@ -48,13 +54,17 @@
         <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
     </div>
     <div class="search"> <!-- search bar-->
+        <span class="material-icons" id="search-icon"> search </span>
+        <span>
+            <!--blinking type cursor-->
+        </span>
         <input type="search" class="searchbar">
     </div>
     <div class="buttons">
         <button class="button">Google Search</button>
         <button class="button">I'm Feeling Lucky</button>
     </div>
-    <span class="material-icons-outlined"> search </span>
+   
 </body>
 <footer></footer>
 </html>
