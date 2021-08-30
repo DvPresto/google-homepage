@@ -43,6 +43,27 @@
             left: 30px;
             top: 3px;
         }
+
+        .cursor{
+            position: relative;
+            left: 35px;
+            top: 4px;
+            width: 20px;
+            height: 1.2em;
+            animation-name: blink;
+            animation-duration: 3s;
+        }
+
+        @keyframes blink{
+            0% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: white;
+            }
+        }
+
     </style>
     <!--link to Google icon stylesheet-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
@@ -55,10 +76,11 @@
     </div>
     <div class="search"> <!-- search bar-->
         <span class="material-icons" id="search-icon"> search </span>
-        <span>
-            <!--blinking type cursor-->
+        <span class="cursor">
+            <!--blinking type cursor--> 
         </span>
         <input type="search" class="searchbar">
+        
     </div>
     <div class="buttons">
         <button class="button">Google Search</button>
