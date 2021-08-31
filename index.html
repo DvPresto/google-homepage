@@ -51,9 +51,9 @@
             width: 2px;
             height: 1.2em;
             animation-name: blink;
-            animation-duration: 1s;
+            animation-duration: 2.5s;
             animation-iteration-count: infinite;
-            animation-timing-function: steps(2,end);
+            animation-timing-function: steps(1,end);
         }
 
         @keyframes blink{
@@ -61,9 +61,13 @@
                 background-color: black;
             }
 
-            100% {
+            50% {
                 background-color: white;
             }
+        }
+
+        .navbar{
+
         }
 
     </style>
@@ -72,6 +76,14 @@
 
 </head>
 <body>
+    <div class="navbar"><!--navbar-->
+        <a>About</a>
+        <a>Store</a>
+        <a>Gmail</a>
+        <a>Images</a>
+        <a>[more options buttons]</a>
+        <button>Sign in</button>
+    </div>
     <div class="top"><!--top of page whitespace--></div>
     <div id="logo">
         <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
