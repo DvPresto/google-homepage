@@ -69,6 +69,7 @@
         .navbar{
             display: grid; /*1 row x 7 columns, C3 is wide and empty*/
             grid-template: 2em / auto 1fr auto auto auto auto auto;
+            padding: 10px;
         }
 
         #sign-in{
@@ -77,6 +78,14 @@
             border-radius: 12%;
             height: 3em;
             width: 100px;
+        }
+
+        a{
+            padding: 10px;
+        }
+
+        a:hover{
+            text-decoration: underline;
         }
 
     </style>
@@ -90,7 +99,7 @@
         <a>Store</a>
         <a>Gmail</a>
         <a>Images</a>
-        <a>[more options buttons]</a>
+        <a><span class="material-icons" id="search-icon"> search </span></a>
         <button id="sign-in">Sign in</button>
     </div>
     <div class="top"><!--top of page whitespace--></div>
