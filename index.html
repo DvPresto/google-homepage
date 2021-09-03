@@ -68,7 +68,7 @@
 
         .navbar{
             display: grid; /*1 row x 7 columns, C3 is wide and empty*/
-            grid-template: 2em / auto 1fr auto auto auto auto auto;
+            grid-template: 2em / auto auto 1fr auto auto auto auto;
             padding: 10px;
         }
 
@@ -97,9 +97,10 @@
     <div class="navbar"><!--navbar-->
         <a>About</a>
         <a>Store</a>
+        <div><!--empty column--></div>
         <a>Gmail</a>
         <a>Images</a>
-        <a><span class="material-icons" id="search-icon"> search </span></a>
+        <a><div class="material-icons"> apps </div></a>
         <button id="sign-in">Sign in</button>
     </div>
     <div class="top"><!--top of page whitespace--></div>
