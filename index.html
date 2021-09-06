@@ -88,16 +88,13 @@
             text-decoration: underline;
         }
 
-        #apps-button div:hover{ /*not working!*/
+        .apps-button{
+            width: 70px;
+        }
+
+        .apps-button:hover{
             background-color: gray;
-            width: 600px;
-
         }
-
-        #sign-in button:hover{ /*also not working*/
-            background-color: red;
-        }
-
         
 
     </style>
@@ -112,7 +109,7 @@
         <div><!--empty column--></div>
         <a>Gmail</a>
         <a>Images</a>
-        <a><div class="material-icons" id="apps-button"> apps </div></a>
+        <a><div class="material-icons apps-button"> apps </div></a>
         <button id="sign-in">Sign in</button>
     </div>
     <div class="top"><!--top of page whitespace--></div>
